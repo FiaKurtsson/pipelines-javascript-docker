@@ -10,11 +10,11 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  azureSubscription: "93b83f2a-ad7e-468c-8a35-23fbddfe7fe6"
+  azureSubscription: "Azure subscription 1"
   appName: "<Name of the Web App>"
-  dockerRegistryServiceConnection: "663408ef-b672-4c28-abbe-467ea0e48817"
+  dockerRegistryServiceConnection: "93b83f2a-ad7e-468c-8a35-23fbddfe7fe6"
   imageRepository: "fiakurtssonpipelinesjavascriptdocker"
-  containerRegistry: "mynewcontainerregistry20241218.azurecr.io"
+  containerRegistry: "mynewcontainerregistry20241218"
   dockerfilePath: "$(Build.SourcesDirectory)/app/Dockerfile"
   tag: "$(Build.BuildId)"
 
