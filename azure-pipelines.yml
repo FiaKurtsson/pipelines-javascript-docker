@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  azureSubscription: "Azure subscription 1"
+  azureSubscription: "93b83f2a-ad7e-468c-8a35-23fbddfe7fe6"
   appName: "<Name of the Web App>"
   dockerRegistryServiceConnection: "663408ef-b672-4c28-abbe-467ea0e48817"
   imageRepository: "fiakurtssonpipelinesjavascriptdocker"
@@ -40,9 +40,3 @@ stages:
               tags: |
                 $(tag)
           ## Add the below snippet at the end of your pipeline
-          - task: AzureWebAppContainer@1
-            displayName: "Azure Web App on Container Deploy"
-            inputs:
-              azureSubscription: $(azureSubscription)
-              appName: $(appName)
-              containers: $(containerRegistry)/$(imageRepository):$(tag)
