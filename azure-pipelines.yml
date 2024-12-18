@@ -10,9 +10,9 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  azureSubscription: "93b83f2a-ad7e-468c-8a35-23fbddfe7fe6"
+  azureSubscription: "dc4fbfce-51f8-4979-b68e-85a00e68f033"
   appName: "fias-webbapp-20241218"
-  dockerRegistryServiceConnection: "663408ef-b672-4c28-abbe-467ea0e48817"
+  dockerRegistryServiceConnection: "538257f3-25f8-4adb-a6e1-81e60b790230"
   imageRepository: "fiakurtssonpipelinesjavascriptdocker"
   containerRegistry: "mynewcontainerregistry20241218"
   dockerfilePath: "$(Build.SourcesDirectory)/app/Dockerfile"
