@@ -12,7 +12,7 @@ variables:
   # Container registry service connection established during pipeline creation
   azureSubscription: "93b83f2a-ad7e-468c-8a35-23fbddfe7fe6"
   appName: "fias-webbapp-20241218"
-  dockerRegistryServiceConnection: "bfcd139a-66c4-47e4-9934-7d77b6e633fd"
+  dockerRegistryServiceConnection: "663408ef-b672-4c28-abbe-467ea0e48817"
   imageRepository: "fiakurtssonpipelinesjavascriptdocker"
   containerRegistry: "mynewcontainerregistry20241218"
   dockerfilePath: "$(Build.SourcesDirectory)/app/Dockerfile"
